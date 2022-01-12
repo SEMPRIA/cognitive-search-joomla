@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="search" version="3.0" method="upgrade">
+  <name>SempSearch</name>
+  <author>Sven Hartrumpf; Valentin Schulte</author>
+  <creationDate>2020-10-01</creationDate>
+  <copyright>(C) 2020-2022 SEMPRIA GmbH, Düsseldorf. Valentin Schulte Coding, Worms. All rights reserved.</copyright>
+  <license>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL Version 2</license>
+  <authorEmail>info@sempria.de</authorEmail>
+  <authorUrl>https://www.sempria.de/</authorUrl>
+  <version>1.1.0</version>
+  <description>Search plugin for using the cognitive search engine SEMPRIA-Search. Currently, it supports only German texts.</description>
+  <files>
+    <filename plugin="sempsearch">sempsearch.php</filename>
+    <filename plugin="sempsearch">sempsearch.css</filename>
+    <filename plugin="sempsearch">sempria-suggest.js</filename>
+    <filename plugin="sempsearch">sempria-suggest.css</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field 
+          name="api_base_url"
+          type="text"
+          default="https://api.sempria.de:NNNN/sempria-search"
+          description="Base URL of the SEMPRIA-Search server. It must lead to the root API endpoint."
+          label="SEMPRIA-Search API URL" />
+        <field 
+          name="api_pw"
+          type="password"
+          default=""
+          description="Password for accessing your SEMPRIA-Search service."
+          label="SEMPRIA-Search API PW" />
+        <field 
+          name="corpus"
+          type="text"
+          default=""
+          description="ID of the corpus that will be searched."
+          label="SEMPRIA-Search Corpus ID" />
+        <field 
+          name="srp_semp"
+          type="checkbox"
+          default="1"
+          description="Whether semantic links in SEMPRIA-Search results (marked by + and ?) should use SEMPRIA-Search."
+          label="Search links to SEMPRIA-Search" />
+        <field 
+          name="doc_path"
+          type="text"
+          default=""
+          description="path for local documents SEMPRIA-Search will lead to on result pages. Only needed when doc path differs from original. Leave blank if unsure."
+          label="Local document path" />
+        <field 
+          name="api_doc_path"
+          type="text"
+          default=""
+          description="original path for documents SEMPRIA-Search will lead to on result pages. Only needed, when manually requested. Leave blank if unsure."
+          label="Original document path" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
