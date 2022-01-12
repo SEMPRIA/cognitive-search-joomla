@@ -1,5 +1,5 @@
 # Cognitive Search as a Joomla Plugin
-Joomla plugin to use the meaning-oriented, cognitive search SEMPRIA-Search
+Joomla plugin to use the meaning-oriented, cognitive search SEMPRIA-Search (https://www.sempria.de/hop/sempria/sprachverstehende_Suchmaschine)
 
 ## Warnings
 
