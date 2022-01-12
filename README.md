@@ -9,4 +9,6 @@ Joomla plugin to use the meaning-oriented, cognitive search SEMPRIA-Search
 
 ## Installation instructions
 
-The most up-to-date installation instructions can be found here (in German only): https://www.sempria.de/hop/sempria/Suchplugin_Joomla
+The most up-to-date installation instructions can be found here (in German only):
+
+https://www.sempria.de/hop/sempria/Suchplugin_Joomla
